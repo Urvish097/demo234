@@ -1,0 +1,8 @@
+.button {
+    padding: 13px 65px 13px 65px;
+    border-radius: 0px;
+    font-size: 14px;
+}
+#Btn_hover:hover{
+ background-color: #C19A5B !important;
+}

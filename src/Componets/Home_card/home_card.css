@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.Home_card .img_heading {
+    background-color: #F9F8F8;
+    width: 100%;
+    box-shadow: 4px 9px 14px 0px rgba(135, 128, 123, 0.1450980392156863);
+}
+
+.Home_card .img_heading p {
+    font-size: 13px;
+    color: #161616;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.Home_card .sec-2_main h2 {
+    font-size: 72px;
+    font-family: "Modern Antiqua", serif;
+}
+
+.Home_card .sec-2_main p {
+    font-size: 78px;
+    color: #c19a5b;
+    font-family: 'Reman';
+}
+
+@media (min-width:500px) and (max-width:1200px) {
+
+    .Home_card .sec-2_main p{
+        font-size: 60px;
+    }
+    .Home_card .sec-2_main h2 {
+        font-size: 55px;
+    }
+}
+@media (min-width:300px) and (max-width:500px) {
+
+    .Home_card .sec-2_main p{
+        font-size: 40px;
+    }
+    .Home_card .sec-2_main h2 {
+        font-size: 45px;
+    }
+
+}
+@media  (min-width:300px) and (max-width:991px) {
+    .Home_card .sec-2_main{
+        text-align: center;
+    }
+}
