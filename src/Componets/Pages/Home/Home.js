@@ -24,22 +24,36 @@ const Home = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1400,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 730,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 500,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -78,7 +92,7 @@ const Home = () => {
                 <div className='container'>
                     <div className='row align-items-center justify-content-around'>
                         <div className=' col-lg-5'>
-                            <div className='text-center text-lg-start ms-4' data-aos="fade-right">
+                            <div className='text-center text-lg-start ms-0 ms-lg-4' data-aos="fade-right">
                                 <img src={lady} className='img_lady mb-5' alt="" />
                             </div>
                         </div>
@@ -109,32 +123,34 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='col-lg-8'>
+                            <div className='text-center'>
                             <Slider {...settings}>
-                                <div className='slider_main_2'>
+                                <div className='slider_main_2   '>
                                     <img src={kate} className='w-100 object-fit-contain slider_img' alt="" />
                                     <p className='overflow-hidden mb-1 ms-2'>Sofas</p>
                                 </div>
-                                <div className='slider_main_2'>
+                                <div className='slider_main_2  '>
                                     <img src={mirror} className='w-100 object-fit-contain slider_img' alt="" />
                                     <p className='overflow-hidden mb-1 ms-2'>Mirrors</p>
                                 </div>
-                                <div className='slider_main_2'>
+                                <div className='slider_main_2  '>
                                     <img src={puzzle} className='w-100 object-fit-contain slider_img' alt="" />
                                     <p className='overflow-hidden mb-1 ms-2'>Lights</p>
                                 </div>
-                                <div className='slider_main_2'>
+                                <div className='slider_main_2  '>
                                     <img src={chair} className='w-100 object-fit-contain slider_img' alt="" />
                                     <p className='overflow-hidden mb-1 ms-2'>Chairs / Armchairs</p>
                                 </div>
-                                <div className='slider_main_2'>
+                                <div className='slider_main_2  '>
                                     <img src={tabel} className='w-100 object-fit-contain slider_img' alt="" />
                                     <p className='overflow-hidden mb-1 ms-2'>Tables / Desks</p>
                                 </div>
-                                <div className='slider_main_2'>
+                                <div className='slider_main_2   '>
                                     <img src={console} className='w-100 object-fit-contain slider_img' alt="" />
                                     <p className='overflow-hidden mb-1 ms-2'>Consoles / Sideboards</p>
                                 </div>
                             </Slider>
+                            </div>
                         </div>
                     </div>
                 </div>

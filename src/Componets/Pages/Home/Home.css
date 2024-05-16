@@ -178,3 +178,8 @@
     color: #7A7A7A;
     font-family: inter,sans-serif;
 }
+@media (min-width:100px) and (max-width:1201px) {
+    .sec-3 .img_lady{
+        max-width: 100%;
+    }
+}
