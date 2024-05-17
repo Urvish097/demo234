@@ -19,7 +19,7 @@ const Home = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        autoplay:true,
+        autoplay: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -112,44 +112,61 @@ const Home = () => {
 
             <section className='sec-4'>
                 <div className='container-fluid'>
-                    <div className='row align-items-center'>
+                    <div className='row align-items-center flex-lg-row '>
                         <div className='col-lg-4'>
-                            <div className='slider_main mb-5'>
+                            <div className='slider_main mb-5 order-1'>
                                 <h2 className='text-center'>E-shop</h2>
                                 <p className='text-center'>Our creations</p>
                             </div>
-                            <div className='btn_main text-center'>
+                            <div className='btn_main text-center mb-5 order-3'>
                                 <Button bg_color={"#F2F2F2"} Name={"SHOP NOW"} id={"Btn_hover"} />
                             </div>
                         </div>
-                        <div className='col-lg-8'>
+                        <div className='col-lg-8 order-2'>
                             <div className='text-center'>
-                            <Slider {...settings}>
-                                <div className='slider_main_2   '>
-                                    <img src={kate} className='w-100 object-fit-contain slider_img' alt="" />
-                                    <p className='overflow-hidden mb-1 ms-2'>Sofas</p>
+                                <Slider {...settings}>
+                                    <div className='slider_main_2   '>
+                                        <img src={kate} className='w-100 object-fit-contain slider_img' alt="" />
+                                        <p className='overflow-hidden mb-1 ms-2'>Sofas</p>
+                                    </div>
+                                    <div className='slider_main_2  '>
+                                        <img src={mirror} className='w-100 object-fit-contain slider_img' alt="" />
+                                        <p className='overflow-hidden mb-1 ms-2'>Mirrors</p>
+                                    </div>
+                                    <div className='slider_main_2  '>
+                                        <img src={puzzle} className='w-100 object-fit-contain slider_img' alt="" />
+                                        <p className='overflow-hidden mb-1 ms-2'>Lights</p>
+                                    </div>
+                                    <div className='slider_main_2  '>
+                                        <img src={chair} className='w-100 object-fit-contain slider_img' alt="" />
+                                        <p className='overflow-hidden mb-1 ms-2'>Chairs / Armchairs</p>
+                                    </div>
+                                    <div className='slider_main_2  '>
+                                        <img src={tabel} className='w-100 object-fit-contain slider_img' alt="" />
+                                        <p className='overflow-hidden mb-1 ms-2'>Tables / Desks</p>
+                                    </div>
+                                    <div className='slider_main_2   '>
+                                        <img src={console} className='w-100 object-fit-contain slider_img' alt="" />
+                                        <p className='overflow-hidden mb-1 ms-2'>Consoles / Sideboards</p>
+                                    </div>
+                                </Slider>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className='sec-5'>
+                <div className='bg_img'>
+                    <div className='container'>
+                        <div className='row justify-content-center text-center'>
+                            <div className='col-lg-8'>
+                                <div className='GALLERY'>
+                                    <h1>THE GALLERY</h1>
+                                    <p className='paris mb-4'>in Paris</p>
+                                    <p className='dummay_text mb-5'>The Stephanie Coutas gallery has been designed as a luxurious setting to showcase our most beautiful editions surrounded by a selection of cutting-edge works in the heart of the Parisian Golden Triangle.</p>
+                                    <Button bg_color={"#F2F2F2"} Name={"DISCOVER"} id={"Btn_hover"} />
                                 </div>
-                                <div className='slider_main_2  '>
-                                    <img src={mirror} className='w-100 object-fit-contain slider_img' alt="" />
-                                    <p className='overflow-hidden mb-1 ms-2'>Mirrors</p>
-                                </div>
-                                <div className='slider_main_2  '>
-                                    <img src={puzzle} className='w-100 object-fit-contain slider_img' alt="" />
-                                    <p className='overflow-hidden mb-1 ms-2'>Lights</p>
-                                </div>
-                                <div className='slider_main_2  '>
-                                    <img src={chair} className='w-100 object-fit-contain slider_img' alt="" />
-                                    <p className='overflow-hidden mb-1 ms-2'>Chairs / Armchairs</p>
-                                </div>
-                                <div className='slider_main_2  '>
-                                    <img src={tabel} className='w-100 object-fit-contain slider_img' alt="" />
-                                    <p className='overflow-hidden mb-1 ms-2'>Tables / Desks</p>
-                                </div>
-                                <div className='slider_main_2   '>
-                                    <img src={console} className='w-100 object-fit-contain slider_img' alt="" />
-                                    <p className='overflow-hidden mb-1 ms-2'>Consoles / Sideboards</p>
-                                </div>
-                            </Slider>
                             </div>
                         </div>
                     </div>
